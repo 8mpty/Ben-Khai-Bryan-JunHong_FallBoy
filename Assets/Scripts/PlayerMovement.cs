@@ -6,26 +6,48 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public Rigidbody playerRb;
-    float speed 4.0f;
-
+    float speed = 4.0f;
+    float jump = 0.3f;
 
     // Start is called before the first frame update
     void Start()
     {
-        PlayerMove();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        PlayerMove();
     }
 
     private void PlayerMove()
     {
-        if(Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
-            transform.position = Vector3.forward * speed * Time.deltaTime;
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Translate(Vector3.left * speed * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(Vector3.back * speed * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Translate(Vector3.right * speed * Time.deltaTime);
+        }
+
+        else if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
+        {
+
+        }
+
+        if(Input.GetKey(KeyCode.Space))
+        {
+            playerRb.AddForce(Vector3.up * jump, ForceMode.Impulse);
         }
     }
 }
