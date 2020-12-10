@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody playerRb;
     float speed = 4.0f;
-    float jump = 0.3f;
+    float jump = 3.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
+            transform.Translate(Vector3.left * speed * Time.deltaTime); 
         }
         if (Input.GetKey(KeyCode.S))
         {
@@ -45,9 +45,10 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space)) // fixed jump :)
         {
             playerRb.AddForce(Vector3.up * jump, ForceMode.Impulse);
         }
+        
     }
 }
