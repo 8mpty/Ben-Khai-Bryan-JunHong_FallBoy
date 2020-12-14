@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public Rigidbody playerRb;
+    public GameObject playerGo;
+
+
     float speed = 5.0f;
     float jump = 3.0f;
 
@@ -61,6 +64,13 @@ public class PlayerMovement : MonoBehaviour
         else if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
         {
 
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("FinishLineLvl4"))
+        {
+            SceneManager.LoadScene("WinScene");
         }
     }
 }

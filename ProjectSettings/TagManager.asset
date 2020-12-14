@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Switch
   - Sweeper
+  - FinishLineLvl4
   layers:
   - Default
   - TransparentFX
