@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotatingPlatform1 : MonoBehaviour
+public class ReverseRotate : MonoBehaviour
 {
-
-    private float spinspeed = 15f;
+    private float spinspeed = 10f;
     public GameObject platform;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(new Vector3(0,0, spinspeed * Time.deltaTime));
+        transform.Rotate(new Vector3(-spinspeed * Time.deltaTime, 0, 0));
     }
 }
