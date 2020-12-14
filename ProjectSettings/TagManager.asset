@@ -7,6 +7,7 @@ TagManager:
   - Switch
   - Sweeper
   - FinishLineLvl4
+  - GamePlatforms
   layers:
   - Default
   - TransparentFX
