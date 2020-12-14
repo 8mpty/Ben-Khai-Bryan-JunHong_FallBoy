@@ -8,8 +8,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody playerRb;
     float speed = 5.0f;
-    float jump = 5.0f;
-    
+    float jump = 3.0f;
+
     // Start is called before the first frame update
     void Start()
     {
