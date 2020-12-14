@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -45,7 +46,14 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        if(Input.GetKeyDown(KeyCode.Space)) // fixed jump :)
+        //Losing Condition
+        if (transform.position.y < -5)
+        {
+            print("You Lose!");
+            SceneManager.LoadScene("LoseScene");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space)) // fixed jump :)
         {
             playerRb.AddForce(Vector3.up * jump, ForceMode.Impulse);
         }
