@@ -158,6 +158,7 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &181721047
@@ -253,6 +254,10 @@ Transform:
   m_Father: {fileID: 1722339023}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+=======
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -385,9 +390,12 @@ GameObject:
   m_Layer: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: StartingPlatform
   m_TagString: GamePlatforms
 =======
+=======
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
   m_Name: Platform
@@ -430,7 +438,11 @@ MeshRenderer:
   m_Materials:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2100000, guid: a831bf7ee3406da40b6669a29c72b7ae, type: 2}
+=======
+  - {fileID: 2100000, guid: 1cef938def0b527469f8ef0720c534dc, type: 2}
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   - {fileID: 2100000, guid: 1cef938def0b527469f8ef0720c534dc, type: 2}
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -541,7 +553,11 @@ MeshRenderer:
   m_Materials:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2100000, guid: dea78434fc49bc6438a70f43006519ba, type: 2}
+=======
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -764,7 +780,11 @@ MeshRenderer:
   m_Materials:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2100000, guid: e3b9292f8f42df34d94eadfc475b27c5, type: 2}
+=======
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -1083,7 +1103,11 @@ MeshRenderer:
   m_Materials:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2100000, guid: e3b9292f8f42df34d94eadfc475b27c5, type: 2}
+=======
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -1354,6 +1378,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &553814762
 MonoBehaviour:
@@ -1465,6 +1490,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 87282464}
   m_RootOrder: 2
+=======
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
   m_LocalEulerAnglesHint: {x: 0, y: 33, z: 0}
@@ -1666,7 +1693,11 @@ MeshRenderer:
   m_Materials:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2100000, guid: e3b9292f8f42df34d94eadfc475b27c5, type: 2}
+=======
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -1859,7 +1890,11 @@ MeshRenderer:
   m_Materials:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2100000, guid: e3b9292f8f42df34d94eadfc475b27c5, type: 2}
+=======
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -1947,7 +1982,11 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 11
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   m_RootOrder: 11
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -2245,9 +2284,15 @@ Transform:
   m_GameObject: {fileID: 813332141}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.04, y: -1.2985423, z: 148.96}
   m_LocalScale: {x: 5, y: 0.5, z: 25}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.04, y: -0.7585423, z: 146.51}
+  m_LocalScale: {x: 5, y: 0.5, z: 15}
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.04, y: -0.7585423, z: 146.51}
@@ -2543,6 +2588,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.46, z: -4.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -2553,6 +2599,8 @@ Transform:
 =======
 =======
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
+=======
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
   m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
   m_LocalPosition: {x: 0, y: 2.15, z: -4.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -2561,6 +2609,9 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
+=======
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -2629,7 +2680,11 @@ MeshRenderer:
   m_Materials:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2100000, guid: e3b9292f8f42df34d94eadfc475b27c5, type: 2}
+=======
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -2869,8 +2924,11 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1203162377
 =======
+=======
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 --- !u!1 &1388916360
@@ -2967,6 +3025,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203162377}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1388916360
@@ -3066,6 +3125,8 @@ MeshFilter:
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
+=======
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 --- !u!1 &1470298455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3119,7 +3180,11 @@ MeshRenderer:
   m_Materials:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2100000, guid: 543f851fcd8216b428a5cfb2163ef5b1, type: 2}
+=======
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -3494,6 +3559,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &1655877629 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400078, guid: 461413943bab6ef40aa2a33f18380180,
@@ -3607,6 +3673,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
@@ -3757,7 +3825,11 @@ MeshRenderer:
   m_Materials:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2100000, guid: 543f851fcd8216b428a5cfb2163ef5b1, type: 2}
+=======
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -3913,7 +3985,11 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 6
+=======
+  m_RootOrder: 12
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   m_RootOrder: 12
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -4014,7 +4090,11 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 7
+=======
+  m_RootOrder: 13
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   m_RootOrder: 13
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
@@ -4167,7 +4247,11 @@ MeshRenderer:
   m_Materials:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2100000, guid: e3b9292f8f42df34d94eadfc475b27c5, type: 2}
+=======
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
 =======
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 38bd216... Add Animation and Only allow spacepressed 2 time - (Khai)
