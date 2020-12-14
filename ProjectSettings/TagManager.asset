@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Switch
+  - Sweeper
   layers:
   - Default
   - TransparentFX

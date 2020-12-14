@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody playerRb;
     float speed = 5.0f;
     float jump = 3.0f;
-    private float rotatespeed = 150f;
 
     // Start is called before the first frame update
     void Start()
