@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         PlayerMove();
+
         //Losing Condition
         if (transform.position.y < -5)
         {
@@ -61,7 +62,5 @@ public class PlayerMovement : MonoBehaviour
         {
 
         }
-
-        
     }
 }
