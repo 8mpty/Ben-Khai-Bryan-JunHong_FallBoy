@@ -5,7 +5,7 @@ using UnityEngine;
 public class RotatingPlatform1 : MonoBehaviour
 {
 
-
+    private float spinspeed = 50f;
     public GameObject platform;
     // Start is called before the first frame update
     void Start()
@@ -16,6 +16,6 @@ public class RotatingPlatform1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(new Vector3(0,0, spinspeed * Time.deltaTime));
     }
 }

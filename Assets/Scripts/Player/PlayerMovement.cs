@@ -7,8 +7,9 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public Rigidbody playerRb;
-    float speed = 4.0f;
+    float speed = 5.0f;
     float jump = 3.0f;
+    private float rotatespeed = 150f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,32 +21,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         PlayerMove();
-    }
-
-    private void PlayerMove()
-    {
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Translate(Vector3.left * speed * Time.deltaTime); 
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(Vector3.back * speed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
-        }
-
-        else if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
-        {
-
-        }
-
         //Losing Condition
         if (transform.position.y < -5)
         {
@@ -57,6 +32,37 @@ public class PlayerMovement : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * jump, ForceMode.Impulse);
         }
+
+    }
+
+    private void PlayerMove()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(0, 270, 0);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(0, 90, 0);
+        }
+
+        else if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
+        {
+
+        }
+
         
     }
 }

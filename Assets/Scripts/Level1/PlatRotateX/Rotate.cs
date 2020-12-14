@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraMovement : MonoBehaviour
+public class Rotate : MonoBehaviour
 {
-
-    public GameObject player;
-    Vector3 offset = new Vector3(0.0f, 1.12f, -1.98f);
+    private float spinspeed = 50f;
+    public GameObject platform;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +15,6 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, player.transform.position + offset, 0.1f);
+        transform.Rotate(new Vector3(spinspeed * Time.deltaTime, 0, 0));
     }
 }
