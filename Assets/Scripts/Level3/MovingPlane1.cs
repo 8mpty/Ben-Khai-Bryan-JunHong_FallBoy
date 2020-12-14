@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingPlane : MonoBehaviour
+public class MovingPlane1 : MonoBehaviour
 {
     float speed = 10.0f;
     float zlimit;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pandulum : MonoBehaviour
+public class PandulumRight1 : MonoBehaviour
 {
     float timer = 0f;
     float speed = 3f;
@@ -32,16 +32,16 @@ public class Pandulum : MonoBehaviour
         switch (phase)
         {
             case 0:
-                transform.Rotate(0f, 0f, speed * (1 - timer));  //Speed, from maximum to zero.
+                transform.Rotate(0f, 0f, -speed * (1 - timer));  //Speed, from maximum to zero.
                 break;
             case 1:
-                transform.Rotate(0f, 0f, -speed * timer);       //Speed, from zero to maximum.
+                transform.Rotate(0f, 0f, speed * timer);       //Speed, from zero to maximum.
                 break;
             case 2:
-                transform.Rotate(0f, 0f, -speed * (1 - timer)); //Speed, from maximum to zero.
+                transform.Rotate(0f, 0f, speed * (1 - timer)); //Speed, from maximum to zero.
                 break;
             case 3:
-                transform.Rotate(0f, 0f, speed * timer);        //Speed, from zero to maximum.
+                transform.Rotate(0f, 0f, -speed * timer);        //Speed, from zero to maximum.
                 break;
         }
     }

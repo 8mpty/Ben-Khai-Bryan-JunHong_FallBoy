@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CircleRotate : MonoBehaviour
 {
-    private float spinspeed = 100f;
+    public float spinspeed = 100f;
     public GameObject Player;
     public GameObject rotatePlatform;
     // Start is called before the first frame update
