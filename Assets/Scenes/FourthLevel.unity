@@ -1204,7 +1204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRb: {fileID: 553814757}
-  playerGo: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!95 &553814763
 Animator:
   serializedVersion: 3
