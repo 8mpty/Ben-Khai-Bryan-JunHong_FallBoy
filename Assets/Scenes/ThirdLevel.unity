@@ -240,11 +240,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 74154408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: b1ec48caa77ac6e43a4913180d08b4d2, type: 3}
-=======
-  m_Script: {fileID: 11500000, guid: 0d10696e13a840a43a964e86b7c9d35e, type: 3}
->>>>>>> Stashed changes
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &74154410
@@ -461,7 +457,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 326219373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09683884907fc28458cb2cc24c572b1c, type: 3}
+  m_Script: {fileID: 11500000, guid: df60e1127a2f3444f91f3a3bb431b828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerGo: {fileID: 1800069826}
@@ -1051,11 +1047,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 701067807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 0f1dce8963bd37c4ebb4c42a4e9a53c8, type: 3}
-=======
-  m_Script: {fileID: 11500000, guid: d22b58904c49db343b5d3c477b0a3c49, type: 3}
->>>>>>> Stashed changes
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &701067809
@@ -1196,11 +1188,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1038865292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 0f1dce8963bd37c4ebb4c42a4e9a53c8, type: 3}
-=======
-  m_Script: {fileID: 11500000, guid: d22b58904c49db343b5d3c477b0a3c49, type: 3}
->>>>>>> Stashed changes
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1038865294
@@ -1688,11 +1676,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1644435125}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: a84ea20bba4105e4eb7a9f9e67d495a1, type: 3}
-=======
-  m_Script: {fileID: 11500000, guid: a8cb508b8ccf70c499e59a0019ed73f8, type: 3}
->>>>>>> Stashed changes
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1800069826}
@@ -1987,11 +1971,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1800069826}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b261f623f19274ea0c1231a7ac7d42, type: 3}
+  m_Script: {fileID: 11500000, guid: 334354faba9c9894089f30f89f265a45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerRb: {fileID: 1800069832}
-  animator: {fileID: 0}
 --- !u!54 &1800069832
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2409,11 +2392,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1998735821}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: f0bd796440767c34bb0a8d335ab7161e, type: 3}
-=======
-  m_Script: {fileID: 11500000, guid: 7ae4d8419b896fa4e9525f2bba60987b, type: 3}
->>>>>>> Stashed changes
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1998735823

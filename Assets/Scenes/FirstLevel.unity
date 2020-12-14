@@ -324,6 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84ea20bba4105e4eb7a9f9e67d495a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 699696267}
 --- !u!1 &495933311
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,11 +637,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 699696267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b261f623f19274ea0c1231a7ac7d42, type: 3}
+  m_Script: {fileID: 11500000, guid: 334354faba9c9894089f30f89f265a45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerRb: {fileID: 699696273}
-  animator: {fileID: 0}
 --- !u!136 &699696269
 CapsuleCollider:
   m_ObjectHideFlags: 0
