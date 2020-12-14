@@ -8,11 +8,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody playerRb;
 <<<<<<< HEAD
-<<<<<<< HEAD
     public Animator animator;
 
-=======
->>>>>>> parent of 4998440... Textures and FinishLine Code WinScene (Khai))
 =======
 >>>>>>> parent of 4998440... Textures and FinishLine Code WinScene (Khai))
     float speed = 5.0f;
@@ -89,7 +86,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 <<<<<<< HEAD
-<<<<<<< HEAD
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("FinishLineLvl4"))
@@ -105,8 +101,6 @@ public class PlayerMovement : MonoBehaviour
             spacePressed = 0;
         }
     }
-=======
->>>>>>> parent of 4998440... Textures and FinishLine Code WinScene (Khai))
 =======
 >>>>>>> parent of 4998440... Textures and FinishLine Code WinScene (Khai))
 }
