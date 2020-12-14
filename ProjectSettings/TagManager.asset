@@ -6,11 +6,8 @@ TagManager:
   tags:
   - Switch
   - Sweeper
-<<<<<<< HEAD
   - FinishLineLvl4
   - GamePlatforms
-=======
->>>>>>> parent of 4998440... Textures and FinishLine Code WinScene (Khai))
   layers:
   - Default
   - TransparentFX

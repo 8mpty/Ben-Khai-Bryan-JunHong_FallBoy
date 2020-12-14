@@ -9,14 +9,8 @@ public class CameraMovement : MonoBehaviour
     
     Vector3 offset = new Vector3(0.0f, 2.00f, -4.14f);
 
-<<<<<<< HEAD
     float speed = 1.0f;
     bool isPressed = false;
-=======
-    Vector3 offset = new Vector3(0.0f, 1.12f, -1.98f);
-
-
->>>>>>> parent of 4998440... Textures and FinishLine Code WinScene (Khai))
     // Start is called before the first frame update
     void Start()
     {
