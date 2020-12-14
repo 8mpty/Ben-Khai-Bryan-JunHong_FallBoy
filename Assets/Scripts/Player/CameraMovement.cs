@@ -11,9 +11,12 @@ public class CameraMovement : MonoBehaviour
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     float speed = 1.0f;
     bool isPressed = false;
 =======
+=======
+>>>>>>> parent of 4998440... Textures and FinishLine Code WinScene (Khai))
 =======
 >>>>>>> parent of 4998440... Textures and FinishLine Code WinScene (Khai))
     Vector3 offset = new Vector3(0.0f, 1.12f, -1.98f);
