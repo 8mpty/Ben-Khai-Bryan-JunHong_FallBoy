@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class MovingPlane : MonoBehaviour
 {
-    float speed = 5.0f;
-    float xRightLimit = 30.0f;
-    float xLeftLimit = -30.0f;
-
-    bool isMoveRight = true;
-    bool isMoveLeft = false;
-
+    float speed = 10.0f;
+    float zlimit;
+    bool OnLimit;
+    float currentPost;
+    
     public GameObject PlayerGo;
     // Start is called before the first frame update
     void Start()
@@ -20,34 +18,32 @@ public class MovingPlane : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (isMoveRight && !isMoveLeft)
+    {     
+        currentPost = transform.position.x;
+        zlimit = 15f;
+        if (currentPost < zlimit && OnLimit)
         {
-            if (transform.position.y >= xRightLimit)
-            {
-                transform.Translate(Vector3.right * Time.deltaTime * speed);
-            }
-            else
-            {
-                isMoveLeft = !isMoveLeft;
-                isMoveRight = !isMoveRight;
-            }
+            MoveRight();
         }
-
-
-        if (isMoveLeft && !isMoveRight)
+        else if (currentPost > -15f && !OnLimit)
         {
-            if (transform.position.y <= xLeftLimit)
-            {
-                transform.Translate(Vector3.left * Time.deltaTime * speed);
-            }
-            else
-            {
-                isMoveLeft = !isMoveLeft;
-                isMoveRight = !isMoveRight;
-            }
+            MoveLeft();
+        }
+        else
+        {
+            OnLimit = !OnLimit;
         }
     }
+
+    private void MoveRight()
+    {
+        transform.Translate(Vector3.right * Time.deltaTime * speed);
+    }
+    private void MoveLeft()
+    {
+        transform.Translate(Vector3.left * Time.deltaTime * speed);
+    }
+
 
     private void OnCollisionEnter(Collision collision)
     {
