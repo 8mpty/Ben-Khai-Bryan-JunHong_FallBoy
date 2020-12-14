@@ -6,7 +6,6 @@ public class CircleRotate : MonoBehaviour
 {
     public float spinspeed = 100f;
     public GameObject Player;
-    public GameObject rotatePlatform;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,14 +15,7 @@ public class CircleRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Random.Range(0, 2) < 1)
-        {
-            transform.Rotate(new Vector3(0, Random.Range(spinspeed , 150f) * Time.deltaTime, 0));
-        }
-        else
-        {
-            transform.Rotate(new Vector3(0, Random.Range(spinspeed, 150f) * Time.deltaTime, 0));
-        }
+        transform.Rotate(new Vector3(0, spinspeed * Time.deltaTime, 0));
     }
 
 
@@ -39,6 +31,4 @@ public class CircleRotate : MonoBehaviour
     {
         Player.transform.parent = null;
     }
-
-
 }
