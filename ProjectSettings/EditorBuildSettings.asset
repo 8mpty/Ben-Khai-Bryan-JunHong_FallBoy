@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FirstLevel.unity
+    path: Assets/Scenes/FourthLevel.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/SecondLevel.unity
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoseScene.unity
     guid: 099af48042063a54e9ca6568e5e9f7ce
+  - enabled: 1
+    path: Assets/Scenes/FirstLevel.unity
+    guid: c37dfda6cdf90694c99c31e3142ac801
   m_configObjects: {}
