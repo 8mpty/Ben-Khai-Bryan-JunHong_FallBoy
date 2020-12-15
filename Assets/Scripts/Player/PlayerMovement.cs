@@ -13,7 +13,6 @@ public class PlayerMovement : MonoBehaviour
     float jump = 7.5f;
     float gravityModifier = 2.0f;
     int spacePressed = 0;
-    private float Seconds = 3.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -102,18 +101,16 @@ public class PlayerMovement : MonoBehaviour
         {
             spacePressed = 0;
         }
+    }
 
-        if(collision.gameObject.CompareTag("DropPlatform"))
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("DropPlatform"))
         {
 
-            Seconds -= Time.deltaTime;
             spacePressed = 0;
+            Destroy(collision.gameObject, 0.5f);
 
-            if (Seconds <= 0)
-            {
-                Destroy(collision.gameObject);
-            }
-                
         }
     }
 }

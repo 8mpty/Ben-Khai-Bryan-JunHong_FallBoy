@@ -1876,7 +1876,7 @@ GameObject:
   - component: {fileID: 1028552854}
   m_Layer: 0
   m_Name: SweeperA
-  m_TagString: Untagged
+  m_TagString: Sweeper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2404,7 +2404,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1199264290}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff6012c751612b84e8b244da53e28427, type: 3}
+  m_Script: {fileID: 11500000, guid: a84ea20bba4105e4eb7a9f9e67d495a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 228568023}
@@ -2516,7 +2516,7 @@ GameObject:
   - component: {fileID: 1350226949}
   m_Layer: 0
   m_Name: SweeperB
-  m_TagString: Untagged
+  m_TagString: Sweeper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
