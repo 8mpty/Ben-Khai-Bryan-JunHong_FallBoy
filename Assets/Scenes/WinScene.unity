@@ -351,7 +351,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Restart
+  m_Text: Back To Start
 --- !u!222 &704516243
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -667,7 +667,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1887022630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc0edd556cf10a2449668d97c91f82ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 279fd7fa6a874dd49bfeebf885bba2cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1887022633
@@ -714,7 +714,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1887022632}
-        m_MethodName: Restart
+        m_MethodName: BackToStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

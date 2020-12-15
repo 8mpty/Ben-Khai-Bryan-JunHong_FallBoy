@@ -6,7 +6,6 @@ public class CircleRotate : MonoBehaviour
 {
     public float spinspeed = 100f;
     public GameObject Player;
-    public GameObject rotatePlatform;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +21,9 @@ public class CircleRotate : MonoBehaviour
         }
         else
         {
-            transform.Rotate(new Vector3(0, Random.Range(spinspeed, 150f) * Time.deltaTime, 0));
+            transform.Rotate(new Vector3(0, Random.Range(spinspeed, 200f) * Time.deltaTime, 0));
         }
     }
-
 
     private void OnCollisionEnter(Collision collision)
     {

@@ -11,8 +11,9 @@ public class PlayerMovement : MonoBehaviour
 
     float speed = 5.0f;
     float jump = 7.5f;
-    float gravityModifier = 2.0f;
+    float gravityModifier = 2.5f;
     int spacePressed = 0;
+    public Transform highSlope;
 
     // Start is called before the first frame update
     void Start()
@@ -92,6 +93,10 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("FinishLineLvl2"))
         {
             SceneManager.LoadScene("ThirdLevel");
+        }
+        if (other.gameObject.CompareTag("SlopeSwitch"))
+        {
+            highSlope.GetComponent<Transform>().Rotate(-20f,0,0f);
         }
     }
 

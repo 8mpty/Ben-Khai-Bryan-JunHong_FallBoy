@@ -10,6 +10,8 @@ TagManager:
   - FinishLineLvl4
   - FinishLineLvl2
   - DropPlatform
+  - SpawnerPlatform
+  - SlopeSwitch
   layers:
   - Default
   - TransparentFX
