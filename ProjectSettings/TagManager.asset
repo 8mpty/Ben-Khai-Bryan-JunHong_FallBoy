@@ -9,6 +9,7 @@ TagManager:
   - GamePlatforms
   - FinishLineLvl4
   - FinishLineLvl2
+  - DropPlatform
   layers:
   - Default
   - TransparentFX

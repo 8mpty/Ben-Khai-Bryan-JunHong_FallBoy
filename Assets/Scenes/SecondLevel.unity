@@ -208,7 +208,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44612753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 98}
+  m_LocalPosition: {x: 0, y: -1, z: 101.86046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -240,7 +240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51040609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2058067, y: 0, z: 62.875053}
+  m_LocalPosition: {x: -2.2, y: -1.5, z: 66.5}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_Children:
   - {fileID: 1400339602}
@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 55137831}
   m_Layer: 0
   m_Name: PlaneE
-  m_TagString: Untagged
+  m_TagString: GamePlatforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 93835731}
   m_Layer: 0
   m_Name: PlaneB
-  m_TagString: Untagged
+  m_TagString: GamePlatforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -593,7 +593,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164662943}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 35}
+  m_LocalPosition: {x: 0, y: -1.5, z: 38.86046}
   m_LocalScale: {x: 5, y: 3, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -613,7 +613,7 @@ GameObject:
   - component: {fileID: 221564347}
   m_Layer: 0
   m_Name: DropPlatfromR
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -706,8 +706,8 @@ GameObject:
   - component: {fileID: 228568028}
   - component: {fileID: 228568027}
   - component: {fileID: 228568026}
-  - component: {fileID: 228568024}
   - component: {fileID: 228568025}
+  - component: {fileID: 228568024}
   m_Layer: 0
   m_Name: PlayerParent
   m_TagString: Untagged
@@ -724,11 +724,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 228568023}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c01f7a0857623b42b234151af053eb6, type: 3}
+  m_Script: {fileID: 11500000, guid: 334354faba9c9894089f30f89f265a45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerRb: {fileID: 228568026}
-  animator: {fileID: 0}
+  animator: {fileID: 228568025}
 --- !u!95 &228568025
 Animator:
   serializedVersion: 3
@@ -833,7 +833,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228568023}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -3.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children:
   - {fileID: 995923200}
@@ -854,7 +854,7 @@ GameObject:
   - component: {fileID: 264629623}
   m_Layer: 0
   m_Name: DropPlatfromD
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -948,7 +948,7 @@ GameObject:
   - component: {fileID: 290333800}
   m_Layer: 0
   m_Name: PlaneA
-  m_TagString: Untagged
+  m_TagString: GamePlatforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1042,7 +1042,7 @@ GameObject:
   - component: {fileID: 302702995}
   m_Layer: 0
   m_Name: DropPlatfromJ
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1228,7 +1228,7 @@ GameObject:
   - component: {fileID: 455512391}
   m_Layer: 0
   m_Name: PlaneD
-  m_TagString: Untagged
+  m_TagString: GamePlatforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1322,7 +1322,7 @@ GameObject:
   - component: {fileID: 504214510}
   m_Layer: 0
   m_Name: DropPlatfromI
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1416,7 +1416,7 @@ GameObject:
   - component: {fileID: 508578692}
   m_Layer: 0
   m_Name: PlaneC
-  m_TagString: Untagged
+  m_TagString: GamePlatforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1510,7 +1510,7 @@ GameObject:
   - component: {fileID: 879838836}
   m_Layer: 0
   m_Name: DropPlatfromF
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1604,7 +1604,7 @@ GameObject:
   - component: {fileID: 944469086}
   m_Layer: 0
   m_Name: DropPlatfromG
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1709,7 +1709,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949984632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.48843, y: 20.953148, z: 19.839542}
+  m_LocalPosition: {x: -2.48843, y: 19.453148, z: 23.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 290333803}
@@ -1776,7 +1776,7 @@ GameObject:
   - component: {fileID: 980238143}
   m_Layer: 0
   m_Name: FinalPlatform
-  m_TagString: Untagged
+  m_TagString: GamePlatforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1850,7 +1850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980238142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 94}
+  m_LocalPosition: {x: 0, y: -1.5, z: 97.86046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1981,7 +1981,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044017916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.161705, y: -2.4122968, z: 19.546013}
+  m_LocalPosition: {x: 8.161705, y: -3.9122965, z: 23.406471}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1590625075}
@@ -2043,7 +2043,7 @@ GameObject:
   - component: {fileID: 1072747778}
   m_Layer: 0
   m_Name: DropPlatfromC
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2137,7 +2137,7 @@ GameObject:
   - component: {fileID: 1120598580}
   m_Layer: 0
   m_Name: DropPlatfromE
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2231,7 +2231,7 @@ GameObject:
   - component: {fileID: 1171185149}
   m_Layer: 0
   m_Name: DropPlatfromQ
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2422,7 +2422,7 @@ GameObject:
   - component: {fileID: 1211398382}
   m_Layer: 0
   m_Name: DropPlatfromO
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2610,7 +2610,7 @@ GameObject:
   - component: {fileID: 1389590597}
   m_Layer: 0
   m_Name: DropPlatfromK
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2704,7 +2704,7 @@ GameObject:
   - component: {fileID: 1400339599}
   m_Layer: 0
   m_Name: DropPlatfromA
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2798,7 +2798,7 @@ GameObject:
   - component: {fileID: 1404348447}
   m_Layer: 0
   m_Name: DropPlatfromM
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2892,7 +2892,7 @@ GameObject:
   - component: {fileID: 1422427296}
   m_Layer: 0
   m_Name: PlaneG
-  m_TagString: Untagged
+  m_TagString: GamePlatforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2986,7 +2986,7 @@ GameObject:
   - component: {fileID: 1469096333}
   m_Layer: 0
   m_Name: DropPlatfromS
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3268,7 +3268,7 @@ GameObject:
   - component: {fileID: 1703028879}
   m_Layer: 0
   m_Name: DropPlatfromB
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3362,7 +3362,7 @@ GameObject:
   - component: {fileID: 1768423363}
   m_Layer: 0
   m_Name: DropPlatfromP
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3456,7 +3456,7 @@ GameObject:
   - component: {fileID: 1803903693}
   m_Layer: 0
   m_Name: PlaneF
-  m_TagString: Untagged
+  m_TagString: GamePlatforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3550,7 +3550,7 @@ GameObject:
   - component: {fileID: 1848447021}
   m_Layer: 0
   m_Name: PlaneH
-  m_TagString: Untagged
+  m_TagString: GamePlatforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3722,7 +3722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899455070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 35}
+  m_LocalPosition: {x: 0, y: 0.5, z: 38.86046}
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children:
   - {fileID: 1028552857}
@@ -3744,7 +3744,7 @@ GameObject:
   - component: {fileID: 1901597892}
   m_Layer: 0
   m_Name: DropPlatfromN
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3838,7 +3838,7 @@ GameObject:
   - component: {fileID: 2113955982}
   m_Layer: 0
   m_Name: DropPlatfromL
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4026,7 +4026,7 @@ GameObject:
   - component: {fileID: 2132587938}
   m_Layer: 0
   m_Name: DropPlatfromH
-  m_TagString: Untagged
+  m_TagString: DropPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

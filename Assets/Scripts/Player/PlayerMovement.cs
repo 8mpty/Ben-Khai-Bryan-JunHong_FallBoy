@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     float jump = 7.5f;
     float gravityModifier = 2.0f;
     int spacePressed = 0;
+    private float Seconds = 3.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -82,11 +83,16 @@ public class PlayerMovement : MonoBehaviour
             speed = 5.0f;
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("FinishLineLvl4"))
         {
             SceneManager.LoadScene("WinScene");
+        }
+        if (other.gameObject.CompareTag("FinishLineLvl2"))
+        {
+            SceneManager.LoadScene("ThirdLevel");
         }
     }
 
@@ -95,6 +101,19 @@ public class PlayerMovement : MonoBehaviour
         if(collision.gameObject.CompareTag("GamePlatforms"))
         {
             spacePressed = 0;
+        }
+
+        if(collision.gameObject.CompareTag("DropPlatform"))
+        {
+
+            Seconds -= Time.deltaTime;
+            spacePressed = 0;
+
+            if (Seconds <= 0)
+            {
+                Destroy(collision.gameObject);
+            }
+                
         }
     }
 }
