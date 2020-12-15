@@ -9,7 +9,6 @@ public class CameraMovement : MonoBehaviour
     
     Vector3 offset = new Vector3(0.0f, 2.00f, -4.14f);
 
-    float speed = 1.0f;
     bool isPressed = false;
     // Start is called before the first frame update
     void Start()

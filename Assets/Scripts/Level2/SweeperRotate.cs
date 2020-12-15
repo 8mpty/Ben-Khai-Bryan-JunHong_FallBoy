@@ -5,7 +5,7 @@ using UnityEngine;
 public class SweeperRotate : MonoBehaviour
 {
 
-    float SweeperSpeed = 25.0f;
+    float SweeperSpeed = 35.0f;
 
     // Start is called before the first frame update
     void Start()
