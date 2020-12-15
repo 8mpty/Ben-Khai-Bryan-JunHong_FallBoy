@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pandulum : MonoBehaviour
 {
     float timer = 0f;
-    float speed = 3f;
+    float speed = 1f;
     int phase = 0;
     // Start is called before the first frame update
     void Start()
