@@ -21,4 +21,9 @@ public class BacktoStart : MonoBehaviour
     {
         SceneManager.LoadScene("StartScreen");
     }
+
+    public void ToInstruction()
+    {
+        SceneManager.LoadScene("InstructionScene");
+    }
 }
