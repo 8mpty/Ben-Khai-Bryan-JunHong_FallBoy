@@ -20,6 +20,7 @@ public class CameraMovement : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.Lerp(transform.position, player.transform.position + offset, 0.1f);
+
         if(Input.GetKey(KeyCode.Q) && isPressed)
         {
             CameraRotation();

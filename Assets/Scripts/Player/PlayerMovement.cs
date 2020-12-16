@@ -8,12 +8,17 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody playerRb;
     public Animator animator;
-
-    float speed = 5.0f;
-    float jump = 7.5f;
-    float gravityModifier = 2.5f;
-    int spacePressed = 0;
     public Transform highSlope;
+
+    private float speed = 5.0f;
+    private float jump = 7.5f;
+    private float gravityModifier = 2.5f;
+
+    private int spacePressed = 0;
+    private int touchSwitch = 1;
+
+    private bool switchBool = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,33 +38,35 @@ public class PlayerMovement : MonoBehaviour
             print("You Lose!");
             SceneManager.LoadScene("LoseScene");
         }
+
+        if (touchSwitch == 0 && switchBool == true)
+        {
+            highSlope.GetComponent<Transform>().Rotate(-20f, 0, 0f);
+            touchSwitch += 1;
+        }
     }
 
     private void PlayerMove()
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            PlayerAnimAndForward();
             transform.rotation = Quaternion.Euler(0, 0, 0);
-            animator.SetBool("isRun" , true);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            PlayerAnimAndForward();
             transform.rotation = Quaternion.Euler(0, 270, 0);
-            animator.SetBool("isRun", true);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            PlayerAnimAndForward();
             transform.rotation = Quaternion.Euler(0, 180, 0);
-            animator.SetBool("isRun", true);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            PlayerAnimAndForward();
             transform.rotation = Quaternion.Euler(0, 90, 0);
-            animator.SetBool("isRun", true);
         }
 
         else if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
@@ -76,12 +83,18 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
-            speed = 10.0f;
+            speed = 8.0f;
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = 5.0f;
         }
+    }
+
+    private void PlayerAnimAndForward()
+    {
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        animator.SetBool("isRun", true);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -90,13 +103,25 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene("WinScene");
         }
+
         if (other.gameObject.CompareTag("FinishLineLvl2"))
         {
             SceneManager.LoadScene("ThirdLevel");
         }
+
         if (other.gameObject.CompareTag("SlopeSwitch"))
         {
-            highSlope.GetComponent<Transform>().Rotate(-20f,0,0f);
+            touchSwitch -= 1;
+            switchBool = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("SlopeSwitch"))
+        {
+            touchSwitch = 0;
+            switchBool = false;
         }
     }
 
@@ -112,10 +137,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("DropPlatform"))
         {
-
             spacePressed = 0;
             Destroy(collision.gameObject, 0.5f);
-
         }
     }
 }
