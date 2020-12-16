@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float speed = 5.0f;
     private float jump = 7.5f;
-    private float gravityModifier = 2.5f;
+    private float gravity = 850f;
 
     private int spacePressed = 0;
     private int touchSwitch = 1;
@@ -24,7 +24,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        Physics.gravity *= gravityModifier;
+        //Physics.gravity *= gravityModifier;
+        playerRb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -48,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void PlayerMove()
     {
+
+        playerRb.AddForce(Vector3.down * Time.deltaTime * gravity);// Fixed gravity
         if (Input.GetKey(KeyCode.W))
         {
             PlayerAnimAndForward();
