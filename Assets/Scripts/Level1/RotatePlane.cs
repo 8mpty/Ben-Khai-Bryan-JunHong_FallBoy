@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateRod : MonoBehaviour
+public class RotatePlane : MonoBehaviour
 {
-    float rotateSpeed = 5.0f;
-    float rotateRod = 100.0f;
-
+    float rotatePlane = 50.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +14,6 @@ public class RotateRod : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.up * rotateRod * Time.deltaTime);
+        transform.Rotate(Vector3.up * rotatePlane * Time.deltaTime);
     }
 }

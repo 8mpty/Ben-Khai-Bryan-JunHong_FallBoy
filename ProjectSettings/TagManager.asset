@@ -12,6 +12,8 @@ TagManager:
   - DropPlatform
   - SpawnerPlatform
   - SlopeSwitch
+  - FinishLineLvl1
+  - PlayPlaneF
   layers:
   - Default
   - TransparentFX
