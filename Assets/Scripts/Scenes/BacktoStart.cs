@@ -26,4 +26,9 @@ public class BacktoStart : MonoBehaviour
     {
         SceneManager.LoadScene("InstructionScene");
     }
+
+    public void ToCredits()
+    {
+        SceneManager.LoadScene("CreditsScene");
+    }
 }
