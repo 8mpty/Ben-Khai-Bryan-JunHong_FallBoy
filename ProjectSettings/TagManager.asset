@@ -18,6 +18,7 @@ TagManager:
   - PlayPlaneA
   - PlayPlaneB
   - RotateRod
+  - FinishLineLvl3
   layers:
   - Default
   - TransparentFX

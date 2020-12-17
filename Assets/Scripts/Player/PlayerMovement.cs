@@ -141,6 +141,12 @@ public class PlayerMovement : MonoBehaviour
             SceneManager.LoadScene("ThirdLevel");
         }
 
+        // Transition to 4th Level
+        if (other.gameObject.CompareTag("FinishLineLvl3"))
+        {
+            SceneManager.LoadScene("FourthLevel");
+        }
+
         // Transition to Win Scene
         if (other.gameObject.CompareTag("FinishLineLvl4"))
         {
@@ -148,7 +154,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Toggle Switch for CubeSwitch to ON or OFF
-        if (other.gameObject.CompareTag("SlopeSwitch"))// Toggle Switch for CubeSwitch to ON or OFF
+        if (other.gameObject.CompareTag("SlopeSwitch"))
         {
             touchSwitch -= 1;
             switchBool = true;
