@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RotateRod : MonoBehaviour
 {
-    float rotateSpeed = 5.0f;
     float rotateRod = 100.0f;
 
     // Start is called before the first frame update
