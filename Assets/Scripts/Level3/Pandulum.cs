@@ -21,11 +21,12 @@ public class Pandulum : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Emables the object to rotate back and forth after a certain time
         timer += Time.fixedDeltaTime;
         if (timer > 1f)
         {
             phase++;
-            phase %= 4;            //Keep the phase between 0 to 3.
+            phase %= 4;     //Keep the phase between 0 to 4.
             timer = 0f;
         }
 

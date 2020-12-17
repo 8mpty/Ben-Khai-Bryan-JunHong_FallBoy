@@ -14,6 +14,7 @@ public class CylinderRotater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Rotates Cylinder
         transform.Rotate(Vector3.up * Time.deltaTime * Rotatespeed);
     }
 }

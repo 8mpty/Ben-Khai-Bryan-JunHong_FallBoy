@@ -19,6 +19,8 @@ public class RestartButton3 : MonoBehaviour
 
     public void Restart3()
     {
+        // If in lose condition and restart lvl button is pressed
+        // the lvl will be reloaded
         SceneManager.LoadScene("ThirdLevel");
     }
 }

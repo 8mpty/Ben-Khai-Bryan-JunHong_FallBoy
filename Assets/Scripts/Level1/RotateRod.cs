@@ -15,6 +15,7 @@ public class RotateRod : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // spins cylinder
         transform.Rotate(Vector3.up * rotateRod * Time.deltaTime);
     }
 }

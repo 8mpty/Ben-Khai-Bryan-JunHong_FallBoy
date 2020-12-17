@@ -19,6 +19,7 @@ public class FinishLine : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        // If touching win object, loads second lvl
         if (other.gameObject.tag == "FinishLineLvl1")
         {
             SceneManager.LoadScene("SecondLevel");

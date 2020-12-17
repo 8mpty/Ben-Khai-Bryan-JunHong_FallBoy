@@ -14,6 +14,7 @@ public class RotatePlane : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Rotates platform
         transform.Rotate(Vector3.up * rotatePlane * Time.deltaTime);
     }
 }
