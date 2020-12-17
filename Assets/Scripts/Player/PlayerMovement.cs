@@ -34,10 +34,28 @@ public class PlayerMovement : MonoBehaviour
         PlayerMove();
 
         //Losing Condition
-        if (transform.position.y < -5)
+        if (transform.position.y < -5 && SceneManager.GetActiveScene().name == "FirstLevel")
         {
             print("You Lose!");
             SceneManager.LoadScene("LoseScene");
+        }
+
+        if (transform.position.y < -5 && SceneManager.GetActiveScene().name == "SecondLevel")
+        {
+            print("You Lose!");
+            SceneManager.LoadScene("LoseScene2");
+        }
+
+        if (transform.position.y < -5 && SceneManager.GetActiveScene().name == "ThirdLevel")
+        {
+            print("You Lose!");
+            SceneManager.LoadScene("LoseScene3");
+        }
+
+        if (transform.position.y < -5 && SceneManager.GetActiveScene().name == "FourthLevel")
+        {
+            print("You Lose!");
+            SceneManager.LoadScene("LoseScene4");
         }
 
         if (touchSwitch == 0 && switchBool == true)
