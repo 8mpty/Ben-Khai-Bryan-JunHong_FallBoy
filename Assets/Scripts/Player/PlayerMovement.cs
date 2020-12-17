@@ -34,31 +34,31 @@ public class PlayerMovement : MonoBehaviour
         PlayerMove();
 
         //Losing Condition
-        if (transform.position.y < -5 && SceneManager.GetActiveScene().name == "FirstLevel")
+        if (transform.position.y < -5 && SceneManager.GetActiveScene().name == "FirstLevel")//Restart First Level
         {
             print("You Lose!");
             SceneManager.LoadScene("LoseScene");
         }
 
-        if (transform.position.y < -5 && SceneManager.GetActiveScene().name == "SecondLevel")
+        if (transform.position.y < -5 && SceneManager.GetActiveScene().name == "SecondLevel")//Restart Second Level
         {
             print("You Lose!");
             SceneManager.LoadScene("LoseScene2");
         }
 
-        if (transform.position.y < -5 && SceneManager.GetActiveScene().name == "ThirdLevel")
+        if (transform.position.y < -5 && SceneManager.GetActiveScene().name == "ThirdLevel")//Restart Third Level
         {
             print("You Lose!");
             SceneManager.LoadScene("LoseScene3");
         }
 
-        if (transform.position.y < -5 && SceneManager.GetActiveScene().name == "FourthLevel")
+        if (transform.position.y < -5 && SceneManager.GetActiveScene().name == "FourthLevel")//Restart Fourth Level
         {
             print("You Lose!");
             SceneManager.LoadScene("LoseScene4");
         }
 
-        if (touchSwitch == 0 && switchBool == true)
+        if (touchSwitch == 0 && switchBool == true)//Enable the Slope to rotate
         {
             highSlope.GetComponent<Transform>().Rotate(-20f, 0, 0f);
             touchSwitch += 1;
@@ -69,28 +69,29 @@ public class PlayerMovement : MonoBehaviour
     {
 
         playerRb.AddForce(Vector3.down * Time.deltaTime * gravity);// Fixed gravity
-        if (Input.GetKey(KeyCode.W))
+
+        if (Input.GetKey(KeyCode.W))//Forward
         {
             PlayerAnimAndForward();
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))//Left
         {
             PlayerAnimAndForward();
             transform.rotation = Quaternion.Euler(0, 270, 0);
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))//Back
         {
             PlayerAnimAndForward();
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))//Right
         {
             PlayerAnimAndForward();
             transform.rotation = Quaternion.Euler(0, 90, 0);
         }
 
-        else if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
+        else if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))//idle anim
         {
             animator.SetBool("isRun", false);
         }
@@ -102,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
             spacePressed += 1;
         }
 
+        //Sprint
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed = 8.0f;
@@ -112,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void PlayerAnimAndForward()
+    private void PlayerAnimAndForward()//Run anim
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
         animator.SetBool("isRun", true);
@@ -120,24 +122,24 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("FinishLineLvl4"))
+        if (other.gameObject.CompareTag("FinishLineLvl4"))//Transition to Win Scene
         {
             SceneManager.LoadScene("WinScene");
         }
 
-        if (other.gameObject.CompareTag("FinishLineLvl2"))
+        if (other.gameObject.CompareTag("FinishLineLvl2"))//Transition to 3rd Level
         {
             SceneManager.LoadScene("ThirdLevel");
         }
 
-        if (other.gameObject.CompareTag("SlopeSwitch"))
+        if (other.gameObject.CompareTag("SlopeSwitch"))//Toggle Switch
         {
             touchSwitch -= 1;
             switchBool = true;
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)//Enable the switch to be toggled only once
     {
         if (other.gameObject.CompareTag("SlopeSwitch"))
         {
@@ -146,7 +148,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)//Check Collision Condition for GamePlatforms
     {
         if(collision.gameObject.CompareTag("GamePlatforms"))
         {
@@ -154,7 +156,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionStay(Collision collision)//Check Collision Condition for DropPlatforms
     {
         if (collision.gameObject.CompareTag("DropPlatform"))
         {
