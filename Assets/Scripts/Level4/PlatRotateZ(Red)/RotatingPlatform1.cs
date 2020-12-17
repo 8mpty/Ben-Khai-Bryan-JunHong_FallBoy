@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class RotatingPlatform1 : MonoBehaviour
 {
+    // VARIABLES //
 
-    private float spinspeed = 15f;
-    public GameObject platform;
+    public GameObject platform;     // Set platform as Game Object
+    private float spinspeed = 15f;  // Set spin speed of the RedPlane
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,7 @@ public class RotatingPlatform1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Make the BluePlatform rotate on its Z Axis.
         transform.Rotate(new Vector3(0,0, spinspeed * Time.deltaTime));
     }
 }

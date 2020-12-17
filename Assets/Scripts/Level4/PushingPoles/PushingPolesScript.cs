@@ -5,11 +5,11 @@ using UnityEngine;
 public class PushingPolesScript : MonoBehaviour
 {
 
-    private float speed;
-
-    float xlimit;
-    float currentPos;
-    bool onLimit;
+    // VARIABLES //
+    private float speed;       // Set Speed
+    private float xlimit;      // Set the xlimit
+    private float currentPos;  // Set the currentPos of the PushingPole
+    private bool onLimit;      // Set the bool onLimit fo the PushingPole to hit
 
 
     void Start()
@@ -19,20 +19,23 @@ public class PushingPolesScript : MonoBehaviour
 
     void Update()
     {
-        PolePush();
+        PolePush(); // Call PolePush Function
     }
     
     private void PolePush()
     {
+        // Make the Pole move on its x Axis 
         currentPos = transform.position.x;
         xlimit = -0.10f;
-        if(currentPos < xlimit && onLimit)
+
+        // If player's current Pos is lesser than the given xLimit and is  on the limit, Pole will move right else move left
+        if (currentPos < xlimit && onLimit) 
         {
-            MoveRight();
+            MoveRight(); // Call MoveRight Funtion
         }
         else if(currentPos > -5f && !onLimit)
         {
-            MoveLeft();
+            MoveLeft(); // Call MoveLeft Funtion
         }
         else
         {
@@ -42,13 +45,13 @@ public class PushingPolesScript : MonoBehaviour
 
     private void MoveRight()
     {
-        speed = Random.Range(10f, 20f);
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        speed = Random.Range(10f, 20f); // Set random speed
+        transform.Translate(Vector3.right * speed * Time.deltaTime); // Make Pole move right
     }
 
     private void MoveLeft()
     {
-        speed = Random.Range(5f, 20f);
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
+        speed = Random.Range(5f, 20f); // Set random speed
+        transform.Translate(Vector3.left * speed * Time.deltaTime); // Make Pole move right
     }
 }

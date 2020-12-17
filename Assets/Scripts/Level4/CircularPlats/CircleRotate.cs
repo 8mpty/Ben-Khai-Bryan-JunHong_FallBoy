@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class CircleRotate : MonoBehaviour
 {
-    public float spinspeed = 100f;
-    public GameObject Player;
+    // VARIABLES //
+
+    public GameObject Player;       // Set player as the Game Object
+    public float spinspeed = 100f;  // Set speed for the spin of the Circular platform
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +18,7 @@ public class CircleRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Pick Random and change speed accordingly 
         if (Random.Range(0, 2) < 1)
         {
             transform.Rotate(new Vector3(0, Random.Range(spinspeed , 150f) * Time.deltaTime, 0));
@@ -27,6 +31,7 @@ public class CircleRotate : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        // If player is colliding with the Rotating Cricle, player will be set to child of the Rotating Circle
         if (collision.gameObject.CompareTag("Player"))
         {
             Player.transform.parent = transform;
@@ -35,8 +40,7 @@ public class CircleRotate : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
+        // Remove player from the Rotating Circle parent
         Player.transform.parent = null;
     }
-
-
 }

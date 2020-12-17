@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
-    private float spinspeed = 10f;
-    public GameObject platform;
+    // VARIABLES //
+
+    public GameObject platform;     // Set platform as Game Object
+    private float spinspeed = 10f;  // Set spin speed of the BluePlane
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +18,7 @@ public class Rotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Make the BluePlatform rotate on its X Axis.
         transform.Rotate(new Vector3(spinspeed * Time.deltaTime, 0, 0));
     }
 }

@@ -19,6 +19,6 @@ public class RestartButton4 : MonoBehaviour
 
     public void Restart4()
     {
-        SceneManager.LoadScene("FourthLevel");
+        SceneManager.LoadScene("FourthLevel"); // Load FourthLevel when button pressed
     }
 }
