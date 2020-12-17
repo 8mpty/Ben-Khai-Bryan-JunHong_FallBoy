@@ -16,7 +16,7 @@ public class LinkTo : MonoBehaviour
 
     }
 
-    public void Linkto()
+    public void Linkto() // When "LinkToAnimations" button pressed, will open the character model website
     {
         Application.OpenURL("https://assetstore.unity.com/packages/3d/characters/humanoids/character-pack-free-sample-79870");
     }

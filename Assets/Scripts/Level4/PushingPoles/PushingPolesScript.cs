@@ -6,6 +6,7 @@ public class PushingPolesScript : MonoBehaviour
 {
 
     // VARIABLES //
+
     private float speed;       // Set Speed
     private float xlimit;      // Set the xlimit
     private float currentPos;  // Set the currentPos of the PushingPole

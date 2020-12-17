@@ -19,6 +19,6 @@ public class RestartButtonScript : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("FirstLevel");
+        SceneManager.LoadScene("FirstLevel"); // Link back to the FirstLevel when button pressed
     }
 }

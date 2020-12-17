@@ -19,16 +19,16 @@ public class BacktoStart : MonoBehaviour
 
     public void BackToStart()
     {
-        SceneManager.LoadScene("StartScreen");
+        SceneManager.LoadScene("StartScreen"); // Load StartScene when button is pressed
     }
 
     public void ToInstruction()
     {
-        SceneManager.LoadScene("InstructionScene");
+        SceneManager.LoadScene("InstructionScene"); // Load InstructionScene when the Instruction button is pressed
     }
 
     public void ToCredits()
     {
-        SceneManager.LoadScene("CreditsScene");
+        SceneManager.LoadScene("CreditsScene"); // Load CreditsScene when the Credits button is pressed
     }
 }

@@ -7,7 +7,7 @@ public class CircleRotate : MonoBehaviour
     // VARIABLES //
 
     public GameObject Player;       // Set player as the Game Object
-    public float spinspeed = 100f;  // Set speed for the spin of the Circular platform
+    private float spinspeed = 100f;  // Set speed for the spin of the Circular platform
     
     // Start is called before the first frame update
     void Start()
