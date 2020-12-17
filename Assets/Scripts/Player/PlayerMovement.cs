@@ -132,6 +132,11 @@ public class PlayerMovement : MonoBehaviour
             SceneManager.LoadScene("ThirdLevel");
         }
 
+        if (other.gameObject.CompareTag("FinishLineLvl1"))
+        {
+            SceneManager.LoadScene("SecondLevel");
+        }
+
         if (other.gameObject.CompareTag("SlopeSwitch"))//Toggle Switch
         {
             touchSwitch -= 1;
