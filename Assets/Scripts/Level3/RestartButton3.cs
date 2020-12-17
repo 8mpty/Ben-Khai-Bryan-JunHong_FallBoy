@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class CylinderRotater : MonoBehaviour
+public class RestartButton3 : MonoBehaviour
 {
-    public float Rotatespeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,11 @@ public class CylinderRotater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.up * Time.deltaTime * Rotatespeed);
+        
+    }
+
+    public void Restart3()
+    {
+        SceneManager.LoadScene("ThirdLevel");
     }
 }
